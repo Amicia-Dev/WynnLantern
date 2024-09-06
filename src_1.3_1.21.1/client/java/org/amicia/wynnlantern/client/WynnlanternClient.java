@@ -27,7 +27,7 @@ public class WynnlanternClient implements ClientModInitializer {
                 "Lantern", // Translation key
                 InputUtil.Type.KEYSYM, // Key type
                 GLFW.GLFW_KEY_L, // Default key ("L" for Lantern)
-                "category.wynnlantern.general" // Keybinding category
+                "WynnLantern" // Keybinding category
         ));
 
         torchKeyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
