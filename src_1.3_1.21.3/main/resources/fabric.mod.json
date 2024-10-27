@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "wynnlantern",
+  "version": "${version}",
+  "name": "Wynn Lantern",
+  "description": "A simple mod for Wynncraft that gives you the ability to use a client side lantern for lighting up your surroundings.",
+  "authors": ["Amicia"],
+  "contact": {"email": "amicia.dev@gmail.com", "website": "https://amicia-dev.github.io", "discord": "https://discordapp.com/users/457706754847801355"},
+  "license": "BSD-3-Clause",
+  "icon": "assets/wynnlantern/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.amicia.wynnlantern.client.WynnlanternClient"
+    ],
+    "main": [
+      "org.amicia.wynnlantern.Wynnlantern"
+    ]
+  },
+  "mixins": [
+    "wynnlantern.mixins.json",
+    {
+      "config": "wynnlantern.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-key-binding-api-v1": "*",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
