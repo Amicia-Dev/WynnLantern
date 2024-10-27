@@ -1,3 +1,3 @@
 # WynnLantern
 
-The source code from my mincraft mod, WynnLantern
+The source code for my mincraft mod, WynnLantern
